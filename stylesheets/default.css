@@ -1,16 +1,21 @@
 /*** Reset ***/
 html, body, div, span, h1, h2, p, a, form, label, table, tbody,
 tfoot, thead, tr, th, td, ul, li {
-    background: none repeat scroll 0 0 transparent;
-    border: 0 none;
-    font-size: 100%;
     margin: 0;
-    outline: 0 none;
     padding: 0;
-    vertical-align: baseline
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+
 }
 body {
-    line-height: 1;    
+    line-height: 1;
+    background: #FFF;
+    color: #000;
     font: 13px/1.5 Arial, sans-serif
 }
 a {
@@ -24,7 +29,7 @@ a {
 }
 #header li, .pagination li, #footer li {
     display: inline;
-    list-style-type: none;
+    list-style: none;
     margin-left: 0
 }
 
