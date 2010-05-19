@@ -13,14 +13,20 @@ body {
     line-height: 1;    
     font: 13px/1.5 Arial, sans-serif
 }
-#page { 
-    width: 960px;
-    margin: 0 auto
-}
 a {
     color: #2A5DB0
 }
 
+/*** Page ***/
+#page {
+    width: 960px;
+    margin: 0 auto
+}
+#header li, .pagination li, #footer li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 0
+}
 
 /*** Header ***/
 #header {
@@ -32,11 +38,6 @@ a {
     display: inline;
     float: left;
     margin: 0 10px;
-}
-#header li {
-    display: inline;
-    list-style-type: none;
-    margin-left: 0
 }
 #header h1 {
     color: #FFF;
@@ -53,7 +54,7 @@ a {
 #user_links a.active {
     font-weight: 700
 }
-#header #main_nav, #sub_nav {
+#main_nav, #sub_nav {
     width: 940px
 }
 #main_nav a {
@@ -70,7 +71,7 @@ a {
     height: 20px;
     margin: 0;
     background-color: #BDDFF7;
-    padding: 10px 10px 0
+    padding: 10px 10px 0    
 }
 #sub_nav a {
     padding: 3px 0.5em;
@@ -115,16 +116,16 @@ h3 {
     margin:0 0 20px;
     padding:0
 }
-#sidebar ul.navigation li a {
+#sidebar ul.navigation a {
     background-color: #E7F1F7;
     border-bottom: 1px solid #BDE0F7;
     text-decoration: none;
     display: block;
     padding: 3px 5px
 }
-#sidebar ul.navigation li a.active {
+#sidebar ul.navigation a.active {
     background-color: #CDEBF7;
-    font-weight: 600
+    font-weight: 700
 }
 
 /*** Text ***/
@@ -166,10 +167,6 @@ tbody td.numeric {
 .pagination {
     margin-bottom: 10px;
     text-align: right
-}
-.pagination li {
-    display: inline;
-    list-style-type: none
 }
 .pagination li.disabled {
     color: #BBB
@@ -240,14 +237,9 @@ form .column {
 #main form .column.right {
     margin-left: 10px
 }
-#sidebar form label, 
-#sidebar form input,
-#sidebar form select {
+#sidebar form label, #sidebar form input, #sidebar form select {
     font-size: 100%;
     font-weight: 400
-}
-#sidebar form button.submit {
-    padding: inherit
 }
 
 /*** Footer ***/
@@ -256,9 +248,4 @@ form .column {
     margin-bottom: 10px;
     padding: 10px;
     text-align: center
-}
-#footer li {
-    display: inline;
-    list-style-type: none;
-    margin-left: 0
 }
