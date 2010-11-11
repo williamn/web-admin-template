@@ -24,7 +24,6 @@ a {
 
 /*** Page ***/
 #page {
-    width: 960px;
     margin: 0 auto
 }
 #header li, .pagination li, #footer li {
@@ -39,6 +38,10 @@ a {
     overflow: hidden;
     padding: 5px 0 0 0
 }
+#header #title_and_user_links {
+    margin: 0 auto;
+    width: 960px
+}
 #header h1, #header ul {
     display: inline;
     float: left;
@@ -49,14 +52,14 @@ a {
     font-size: 25px;    
     width: 700px
 }
-#user_links {
+#title_and_user_links ul {
     width: 220px
 }
-#user_links a {
+#title_and_user_links ul a {
     color: #FFF;
     text-decoration: none
 }
-#user_links a.active {
+#title_and_user_links ul a.active {
     font-weight: 700
 }
 #main_nav, #sub_nav {
@@ -74,9 +77,10 @@ a {
 }
 #header #sub_nav {
     height: 20px;
-    margin: 0;
+    margin: 0 auto;
     background-color: #BDDFF7;
-    padding: 10px 10px 0    
+    padding: 10px 10px 0;
+    width: 940px
 }
 #sub_nav a {
     padding: 3px 0.5em;
@@ -88,8 +92,9 @@ a {
 
 /*** Content ***/
 #content {
-    margin: 10px;
-    overflow: hidden
+    margin: 0 auto;
+    overflow: hidden;
+    width: 960px
 }
 h2 {
     font-size: 23px;
