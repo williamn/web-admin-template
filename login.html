@@ -1,0 +1,38 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Web Application HTML Template - Sign in</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="en" />
+        <link href="stylesheets/default.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="page">
+            <div id="content">
+                <h2>Web Application HTML Template</h2>
+                <div class="error message">Error message</div>
+                <div class="warning message">Warning message</div>
+                <div class="notification message">Notification message</div>
+
+                <form action="index.html" method="post">
+                    <div>
+                        <label for="name">Username <span class="error">can't be blank</span></label>
+                        <input type="text" id="username" name="username" size="40" />
+                    </div>
+                    <div>
+                        <label for="company">Password</label>
+                        <input type="password" id="company" name="company" size="40" />
+                    </div>
+                    <div>
+                        <button type="submit" name="submit" class="submit">Save</button>
+                    </div>
+                    <div>
+                        <strong>Help</strong>: <a href="#">I forgot my username on this computer</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
