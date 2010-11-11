@@ -39,21 +39,20 @@ a {
     padding: 5px 0 0 0
 }
 #header #title_and_user_links {
+    overflow: hidden;
     margin: 0 auto;
     width: 960px
 }
-#header h1, #header ul {
-    display: inline;
+#title_and_user_links h1 {
     float: left;
     margin: 0 10px;
-}
-#header h1 {
     color: #FFF;
     font-size: 25px;    
     width: 700px
 }
 #title_and_user_links ul {
-    width: 220px
+    float: left;
+    width: 240px
 }
 #title_and_user_links ul a {
     color: #FFF;
@@ -63,12 +62,13 @@ a {
     font-weight: 700
 }
 #main_nav, #sub_nav {
+    margin: 0 auto;
     width: 940px
 }
 #main_nav a {
     background-color: #5AA7DE;
     color: #FFF;
-    padding: 3px 0.5em;
+    padding: 2px 0.5em;
     text-decoration: none
 }
 #main_nav a.active {
@@ -77,7 +77,6 @@ a {
 }
 #header #sub_nav {
     height: 20px;
-    margin: 0 auto;
     background-color: #BDDFF7;
     padding: 10px 10px 0;
     width: 940px
@@ -92,7 +91,7 @@ a {
 
 /*** Content ***/
 #content {
-    margin: 0 auto;
+    margin: 10px auto;
     overflow: hidden;
     width: 960px
 }
@@ -106,12 +105,12 @@ h3 {
 }
 #main {
     float: left;
-    width: 698px
+    width: 700px
 }
 #sidebar {
     float: left;
     margin-left: 20px;
-    width: 222px
+    width: 240px
 }
 #sidebar h3 {
     background-color: #BDDFF7;
