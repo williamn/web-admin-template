@@ -17,4 +17,4 @@ A simple web application admin template.
 
 ## License
 
-Copyright 2010 William Notowidagdo, "Web application admin template" is release under the MIT License
+Copyright &copy; 2010 William Notowidagdo, "Web application admin template" is release under the MIT License
