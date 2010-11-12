@@ -2,6 +2,8 @@
 
 A simple web application admin template.
 
+See the demo here [http://webappspot.com/web-application-admin-template/](http://webappspot.com/web-application-admin-template/ "See the demo")
+
 ## Tested on
 
 * Firefox and Chromium on Ubuntu 10.04
