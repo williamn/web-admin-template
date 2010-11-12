@@ -93,6 +93,9 @@ a {
 #content {
     margin: 10px auto;
     overflow: hidden;
+    width: 960px
+}
+#login_page #content {
     width: 400px
 }
 h2 {
@@ -135,6 +138,11 @@ h3 {
 #sidebar ul.navigation a.active {
     background-color: #CDEBF7;
     font-weight: 700
+}
+#login_page #help {
+    border-top:1px dashed #CCC;
+    margin-top: 15px;
+    padding-top: 10px
 }
 
 /*** Text ***/
