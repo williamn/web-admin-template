@@ -196,9 +196,9 @@ tbody td.numeric {
     margin-bottom: 10px
 }
 .error.message {
-    background-color: #FFCCFF;
-    border: 1px solid #FF99FF;
-    color: #FF0000
+    background-color: #FBE3E4;
+    border: 1px solid #FBC2C4;
+    color: #D12F19
 }
 .warning.message {
     background-color: #FFFF99;
