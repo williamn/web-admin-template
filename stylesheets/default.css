@@ -47,14 +47,14 @@ a {
     float: left;
     margin: 0 10px;
     color: #FFF;
-    font-size: 25px;    
+    font-size: 25px;
     width: 700px
 }
 #title_and_user_links ul {
     float: left;
     width: 240px
 }
-#title_and_user_links ul a {
+#title_and_user_links a {
     color: #FFF;
     text-decoration: none
 }
@@ -128,14 +128,14 @@ h3 {
     margin:0 0 20px;
     padding:0
 }
-#sidebar ul.navigation a {
+#sidebar a {
     background-color: #E7F1F7;
     border-bottom: 1px solid #BDE0F7;
     text-decoration: none;
     display: block;
     padding: 3px 5px
 }
-#sidebar ul.navigation a.active {
+#sidebar a.active {
     background-color: #CDEBF7;
     font-weight: 700
 }
@@ -173,7 +173,7 @@ tbody td {
     border-left: 1px solid #DDD;
     border-right: 1px solid #DDD
 }
-tr.last_row td {
+.last_row td {
     background-color: #F7F7F7;
     border-bottom: 1px solid #BBB;
     font-weight: 700
@@ -211,7 +211,7 @@ tbody td.numeric {
 
 /*** Form ***/
 form label {
-    display: block;    
+    display: block;
     font-size: 14px;
     font-weight: 700;
     padding-bottom: 2px
@@ -227,7 +227,7 @@ form label.inline {
     font-weight: 400
 }
 form input, form textarea, form select {
-    font-size: 13px    
+    font-size: 13px
 }
 form .description {
     color: #777
@@ -254,7 +254,7 @@ form .column {
 #main form .column.right {
     margin-left: 10px
 }
-#sidebar form label, #sidebar form input, #sidebar form select {
+#sidebar label, #sidebar input, #sidebar select {
     font-size: 100%;
     font-weight: 400
 }
@@ -266,3 +266,4 @@ form .column {
     padding: 10px;
     text-align: center
 }
+
