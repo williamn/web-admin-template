@@ -6,8 +6,10 @@ See the demo here [http://webappspot.com/web-application-admin-template/](http:/
 
 ## Tested on
 
-* Firefox and Chromium on Ubuntu 10.04
-* Firefox and Chromium on Microsoft Windows XP
+* Firefox on Ubuntu 10.04, Windows XP, Windows 7
+* Chromium on Ubuntu 10.04, Windows XP, Windows 7
+* Safari on Windows 7
+* Internet Explorer 8 on Windows 7
 
 ## Screenshots
 
@@ -19,4 +21,4 @@ See the demo here [http://webappspot.com/web-application-admin-template/](http:/
 
 ## License
 
-Copyright &copy; 2010 William Notowidagdo, "Web application admin template" is release under the MIT License
+Copyright &copy; 2011 William Notowidagdo, "Web application admin template" is release under the MIT License
