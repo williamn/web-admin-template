@@ -2,7 +2,7 @@
 
 A simple web application admin template.
 
-See the demo here [http://webappspot.com/web-application-admin-template/](http://webappspot.com/web-application-admin-template/ "See the demo")
+See the demo here [http://williamn.github.com/web-application-admin-template/](http://williamn.github.com/web-application-admin-template/ "See the demo")
 
 ## Tested on
 
