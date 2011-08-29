@@ -10,6 +10,7 @@ See the demo here [http://williamn.github.com/web-application-admin-template/](h
 * Chromium on Ubuntu 10.04, Windows XP, Windows 7
 * Safari on Windows 7
 * Internet Explorer 8 on Windows 7
+* Opera 11.50 on Windows 7
 
 ## Screenshots
 
