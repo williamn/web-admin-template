@@ -48,7 +48,8 @@ a {
     margin: 0 10px;
     color: #FFF;
     font-size: 25px;
-    width: 700px
+    width: 700px;
+    display: inline
 }
 #title_and_user_links ul {
     float: left;
