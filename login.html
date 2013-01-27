@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Web Application HTML Template</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/application.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    </head>
+    <body>
+        <div id="login_page" class="container">
+            <div id="content">
+                <h2>Web Application HTML Template</h2>
+                <div class="error message">Error message</div>
+                <div class="warning message">Warning message</div>
+                <div class="notification message">Notification message</div>
+
+                <form action="index.html" method="post">
+                    <div>
+                        <label for="name">Username <span class="error">can't be blank</span></label>
+                        <input type="text" id="username" name="username" size="40" />
+                    </div>
+                    <div>
+                        <label for="company">Password</label>
+                        <input type="password" id="password" name="password" size="40" />
+                    </div>
+                    <div>
+                        <button type="submit" name="submit" class="submit">Sign in</button>
+                    </div>
+                    <div id="help">
+                        <strong>Help</strong>: <a href="#">I forgot my username on this computer</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

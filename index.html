@@ -1,59 +1,236 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Web Application HTML Template</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="Content-Language" content="en" />
-        <link href="stylesheets/default.css" rel="stylesheet" />
-        <script type="text/javascript">
-            function switchLayout(activeCol){
-                col = (activeCol == 1) ? 2 : 1;
-                document.getElementById("sub_nav_" + activeCol).className = "active";
-                document.getElementById("sub_nav_" + col).className = "";
-                document.getElementById("col_" + activeCol).setAttribute("style", "display: inline");
-                document.getElementById("col_" + col).setAttribute("style", "display: none");
-            }
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-           var _gaq = _gaq || [];
-           _gaq.push(['_setAccount', 'UA-19668577-1']);
-           _gaq.push(['_trackPageview']);
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Web Application HTML Template</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-           (function() {
-           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-           })();
-        </script>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/application.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        function switchLayout(activeCol){
+            col = (activeCol == 1) ? 2 : 1;
+            document.getElementById("sub_nav_" + activeCol).className = "active";
+            document.getElementById("sub_nav_" + col).className = "";
+            document.getElementById("col_" + activeCol).setAttribute("style", "display: inline");
+            document.getElementById("col_" + col).setAttribute("style", "display: none");
+        }
+
+        var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-19668577-1']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
     </head>
     <body>
         <a href="http://github.com/williamn">
             <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
         </a>
+
+        <!-- Primary Page Layout
+        ================================================== -->
         <div id="page">
             <div id="header">
-                <div id="title_and_user_links">
-                  <h1>Web Application HTML Template</h1>
-                  <ul>
-                      <li><a href="" class="active">Settings</a></li>
+                <div id="title_and_user_links" class="container">
+                    <h1 class="eleven columns alpha">Web Application HTML Template</h1>
+                    <ul class="five columns omega">
+                      <li><a href="#" class="active">Settings</a></li>
                       <li><a href="#">Help</a></li>
                       <li><a href="login.html">Sign out</a></li>
-                  </ul>
+                    </ul>
                 </div>
-                <ul id="main_nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="active">Demo</a></li>
-                </ul>
-                <ul id="sub_nav">
-                    <li><a id="sub_nav_1" href="javascript:switchLayout(1)" class="active">1 column</a></li>
-                    <li><a id="sub_nav_2" href="javascript:switchLayout(2)">2 columns</a></li>
-                </ul>
+                <div class="container">
+                    <ul id="main_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Demo</a></li>
+                    </ul>
+                    <ul id="sub_nav">
+                        <li><a id="sub_nav_1" href="javascript:switchLayout(1)" class="active">1 column</a></li>
+                        <li><a id="sub_nav_2" href="javascript:switchLayout(2)">2 columns</a></li>
+                    </ul>
+                </div>
             </div>
+        </div>
 
-            <div id="content">
-                <!-- 1 column start -->
-                <div id="col_1">
+        <div id="content" class="container">
+            <!-- 1 column start -->
+            <div id="col_1">
+                <h2>Text</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer nec enim sed magna pretium lobortis.
+                    In sit amet pellentesque enim.
+                    Vestibulum sit amet ipsum sit amet sapien interdum consequat
+                    vitae eu mi.
+                    In quis euismod lorem.
+                    Donec gravida ultricies lacinia.
+                    Curabitur in justo ligula.
+                    Curabitur nisi dui, placerat ac porta at, rutrum sed ante.
+                    Integer ac arcu felis, at interdum urna. Etiam at est ipsum,
+                    eget porttitor metus.
+                    Quisque egestas, lacus tristique luctus tincidunt,
+                    massa mauris fermentum metus, ac ornare nulla dolor ac massa.
+                    Nunc blandit nunc eros, sed suscipit eros.
+                </p>
+
+                <h2>Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Project</th>
+                            <th>Estimation</th>
+                            <th>Actual</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>Company</td>
+                            <td>Project</td>
+                            <td>Estimation</td>
+                            <td>Actual</td>
+                            <td>End Date</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td><a title="Foo Enterprise" href="#">Foo Enterprise</a></td>
+                            <td>Custom Web Application</td>
+                            <td class="numeric">500,000</td>
+                            <td class="numeric">-</td>
+                            <td>24 April 2010</td>
+                        </tr>
+                        <tr>
+                            <td><a title="Bar Inc." href="#">Bar Inc.</a></td>
+                            <td>Social Networking</td>
+                            <td class="numeric">-</td>
+                            <td class="numeric">390,200</td>
+                            <td>20 April 2010</td>
+                        </tr>
+                        <tr>
+                            <td><a title="Lipsum Internet" href="#">Lipsum Internet</a></td>
+                            <td>Web Design</td>
+                            <td class="numeric">140,000</td>
+                            <td class="numeric">-</td>
+                            <td>19 April 2010</td>
+                        </tr>
+                        <tr class="last_row">
+                            <td></td>
+                            <td></td>
+                            <td class="numeric">640,000</td>
+                            <td class="numeric">390,200</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination">
+                    <li>Projects 1-10 of 76</li>
+                    <li class="disabled">First</li>
+                    <li class="disabled">Prev</li>
+                    <li><a title="Next page" href="#">Next</a></li>
+                    <li><a title="Last" href="#">Last</a></li>
+                </ul>
+
+                <h2>Messages</h2>
+                <div class="error message">Error message</div>
+                <div class="warning message">Warning message</div>
+                <div class="notification message">Notification message</div>
+
+                <h2>Forms</h2>
+                <form action="index.html" method="post">
+                    <div>
+                        <label for="name">Name <span class="error">can't be blank</span></label>
+                        <input type="text" id="name" name="name" size="40" />
+                        <div class="description"><small>Your first and last name</small></div>
+                    </div>
+                    <div>
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" size="40" />
+                    </div>
+                    <div>
+                        <label for="job_description">Job description</label>
+                        <textarea id="job_description" name="job_description" cols="40" rows="10"></textarea>
+                        <div class="description"><small>Your job description</small></div>
+                    </div>
+                    <div>
+                        <button type="submit" name="submit" class="submit">Save</button>or
+                        <a href="#">Cancel</a>
+                    </div>
+                </form>
+
+                <h2>2 Columns Form</h2>
+                <form action="index.html" method="post">
+                    <div class="eight columns alpha">
+                        <div>
+                            <label for="email">E-mail <span class="error">can't be blank</span></label>
+                            <input type="text" id="email" name="email" size="40" />
+                            <div class="description"><small>Your email address</small></div>
+                        </div>
+                        <div>
+                            <label for="email_confirmation">E-mail confirmation</label>
+                            <input type="text" id="email_confirmation" name="email_confirmation" size="40" />
+                        </div>
+                        <div>
+                            <label for="comment">Comment</label>
+                            <textarea id="comment" name="comment" cols="40" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" name="submit" class="submit">Save</button>or
+                            <a href="#">Cancel</a>
+                        </div>
+                    </div>
+                    <div class="eight columns omega">
+                        <div>
+                            <label for="package">Select package</label>
+                            <select name="package" id="package">
+                                <option>Choose...</option>
+                                <option>Family Deal</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Extra topping</label>
+                            <input type="checkbox" value="onion" id="onion" />
+                            <label for="onion" class="inline">Onion</label>
+                            <input type="checkbox" value="cucumber" id="cucumber" />
+                            <label for="cucumber" class="inline">Cucumber</label>
+                        </div>
+                        <div>
+                            <label>Well done?</label>
+                            <input type="radio" name="well_done" value="1" id="yes" />
+                            <label for="yes" class="inline">Yes</label>
+                            <input type="radio" name="well_done" value="0" id="no" />
+                            <label for="no" class="inline">No</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 1 column end -->
+
+            <!-- 2 columns start -->
+            <div id="col_2" style="display: none">
+                <div id="main" class="twelve columns alpha">
                     <h2>Text</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -139,18 +316,18 @@
                     <h2>Forms</h2>
                     <form action="index.html" method="post">
                         <div>
-                            <label for="name">Name <span class="error">can't be blank</span></label>
-                            <input type="text" id="name" name="name" size="40" />
-                            <div class="description">Your first and last name</div>
+                            <label for="name2">Name <span class="error">can't be blank</span></label>
+                            <input type="text" id="name2" name="name2" size="40" />
+                            <div class="description"><small>Your first and last name</small></div>
                         </div>
                         <div>
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" size="40" />
+                            <label for="company2">Company</label>
+                            <input type="text" id="company2" name="company2" size="40" />
                         </div>
                         <div>
-                            <label for="job_description">Job description</label>
-                            <textarea id="job_description" name="job_description" cols="40" rows="10"></textarea>
-                            <div class="description">Your job description</div>
+                            <label for="job_description2">Job description</label>
+                            <textarea id="job_description2" name="job_description2" cols="40" rows="10"></textarea>
+                            <div class="description"><small>Your job description</small></div>
                         </div>
                         <div>
                             <button type="submit" name="submit" class="submit">Save</button>or
@@ -160,291 +337,139 @@
 
                     <h2>2 Columns Form</h2>
                     <form action="index.html" method="post">
-                        <div class="column">
+                        <div class="six columns alpha">
                             <div>
-                                <label for="email">E-mail <span class="error">can't be blank</span></label>
-                                <input type="text" id="email" name="email" size="40" />
-                                <div class="description">Your email address</div>
+                                <label for="email2">E-mail <span class="error">can't be blank</span></label>
+                                <input type="text" id="email2" name="email" size="37" />
+                                <div class="description"><small>Your email address</small></div>
                             </div>
                             <div>
-                                <label for="email_confirmation">E-mail confirmation</label>
-                                <input type="text" id="email_confirmation" name="email_confirmation" size="40" />
+                                <label for="email_confirmation2">E-mail confirmation</label>
+                                <input type="text" id="email_confirmation2" name="email_confirmation2" size="37" />
                             </div>
                             <div>
-                                <label for="comment">Comment</label>
-                                <textarea id="comment" name="comment" cols="40" rows="10"></textarea>
+                                <label for="comment2">Comment</label>
+                                <textarea id="comment2" name="comment2" cols="37" rows="10"></textarea>
                             </div>
                             <div>
                                 <button type="submit" name="submit" class="submit">Save</button>or
                                 <a href="#">Cancel</a>
                             </div>
                         </div>
-                        <div class="column">
+                        <div class="six columns omega">
                             <div>
-                                <label for="package">Select package</label>
-                                <select name="package" id="package">
+                                <label for="package2">Select package</label>
+                                <select name="package2" id="package2">
                                     <option>Choose...</option>
+                                    <option>Family Deal</option>
                                 </select>
                             </div>
                             <div>
                                 <label>Extra topping</label>
-                                <input type="checkbox" value="onion" id="onion" />
+                                <input type="checkbox" value="onion" id="onio2n" />
                                 <label for="onion" class="inline">Onion</label>
-                                <input type="checkbox" value="cucumber" id="cucumber" />
+                                <input type="checkbox" value="cucumber" id="cucumber2" />
                                 <label for="cucumber" class="inline">Cucumber</label>
                             </div>
                             <div>
                                 <label>Well done?</label>
-                                <input type="radio" name="well_done" value="1" id="yes" />
+                                <input type="radio" name="well_done" value="1" id="yes2" />
                                 <label for="yes" class="inline">Yes</label>
-                                <input type="radio" name="well_done" value="0" id="no" />
+                                <input type="radio" name="well_done" value="0" id="no2" />
                                 <label for="no" class="inline">No</label>
                             </div>
                         </div>
                     </form>
                 </div>
-                <!-- 1 column end -->
 
-                <!-- 2 columns start -->
-                <div id="col_2" style="display: none">
-                    <div id="main">
-                        <h2>Text</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Integer nec enim sed magna pretium lobortis.
-                            In sit amet pellentesque enim.
-                            Vestibulum sit amet ipsum sit amet sapien interdum consequat
-                            vitae eu mi.
-                            In quis euismod lorem.
-                            Donec gravida ultricies lacinia.
-                            Curabitur in justo ligula.
-                            Curabitur nisi dui, placerat ac porta at, rutrum sed ante.
-                            Integer ac arcu felis, at interdum urna. Etiam at est ipsum,
-                            eget porttitor metus.
-                            Quisque egestas, lacus tristique luctus tincidunt,
-                            massa mauris fermentum metus, ac ornare nulla dolor ac massa.
-                            Nunc blandit nunc eros, sed suscipit eros.
-                        </p>
+                <div id="sidebar" class="four columns omega">
+                    <h3>Simple Block</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
 
-                        <h2>Table</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Company</th>
-                                    <th>Project</th>
-                                    <th>Estimation</th>
-                                    <th>Actual</th>
-                                    <th>End Date</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <td>Company</td>
-                                    <td>Project</td>
-                                    <td>Estimation</td>
-                                    <td>Actual</td>
-                                    <td>End Date</td>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td><a title="Foo Enterprise" href="#">Foo Enterprise</a></td>
-                                    <td>Custom Web Application</td>
-                                    <td class="numeric">500,000</td>
-                                    <td class="numeric">-</td>
-                                    <td>24 April 2010</td>
-                                </tr>
-                                <tr>
-                                    <td><a title="Bar Inc." href="#">Bar Inc.</a></td>
-                                    <td>Social Networking</td>
-                                    <td class="numeric">-</td>
-                                    <td class="numeric">390,200</td>
-                                    <td>20 April 2010</td>
-                                </tr>
-                                <tr>
-                                    <td><a title="Lipsum Internet" href="#">Lipsum Internet</a></td>
-                                    <td>Web Design</td>
-                                    <td class="numeric">140,000</td>
-                                    <td class="numeric">-</td>
-                                    <td>19 April 2010</td>
-                                </tr>
-                                <tr class="last_row">
-                                    <td></td>
-                                    <td></td>
-                                    <td class="numeric">640,000</td>
-                                    <td class="numeric">390,200</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <ul class="pagination">
-                            <li>Projects 1-10 of 76</li>
-                            <li class="disabled">First</li>
-                            <li class="disabled">Prev</li>
-                            <li><a title="Next page" href="#">Next</a></li>
-                            <li><a title="Last" href="#">Last</a></li>
-                        </ul>
+                    <h3>Refinements</h3>
+                    <form action="index.html" method="post">
+                        <div>
+                            <label for="month_1">Month</label>
+                            <select name="month_1" id="month_1">
+                                <option>Month...</option>
+                                <option>January</option>
+                            </select>
+                        </div>
 
-                        <h2>Messages</h2>
-                        <div class="error message">Error message</div>
-                        <div class="warning message">Warning message</div>
-                        <div class="notification message">Notification message</div>
+                        <div>
+                            <label for="year_2">Year</label>
+                            <select name="year_2" id="year_2">
+                                <option>Year...</option>
+                                <option>2013</option>
+                            </select>
+                        </div>
 
-                        <h2>Forms</h2>
-                        <form action="index.html" method="post">
-                            <div>
-                                <label for="name2">Name <span class="error">can't be blank</span></label>
-                                <input type="text" id="name2" name="name2" size="40" />
-                                <div class="description">Your first and last name</div>
-                            </div>
-                            <div>
-                                <label for="company2">Company</label>
-                                <input type="text" id="company2" name="company2" size="40" />
-                            </div>
-                            <div>
-                                <label for="job_description2">Job description</label>
-                                <textarea id="job_description2" name="job_description2" cols="40" rows="10"></textarea>
-                                <div class="description">Your job description</div>
-                            </div>
-                            <div>
-                                <button type="submit" name="submit" class="submit">Save</button>or
-                                <a href="#">Cancel</a>
-                            </div>
-                        </form>
+                        <div>
+                            <label>Checkbox</label>
+                            <input type="checkbox" value="option_2" id="option_2" />
+                            <label for="option_2" class="inline">Option 1</label>
+                            <input type="checkbox" value="option_3" id="option_3" />
+                            <label for="option_3" class="inline">Option 2</label>
+                        </div>
+                    </form>
 
-                        <h2>2 Columns Form</h2>
-                        <form action="index.html" method="post">
-                            <div class="column left">
-                                <div>
-                                    <label for="email2">E-mail <span class="error">can't be blank</span></label>
-                                    <input type="text" id="email2" name="email" size="37" />
-                                    <div class="description">Your email address</div>
-                                </div>
-                                <div>
-                                    <label for="email_confirmation2">E-mail confirmation</label>
-                                    <input type="text" id="email_confirmation2" name="email_confirmation2" size="37" />
-                                </div>
-                                <div>
-                                    <label for="comment2">Comment</label>
-                                    <textarea id="comment2" name="comment2" cols="37" rows="10"></textarea>
-                                </div>
-                                <div>
-                                    <button type="submit" name="submit" class="submit">Save</button>or
-                                    <a href="#">Cancel</a>
-                                </div>
-                            </div>
-                            <div class="column right">
-                                <div>
-                                    <label for="package2">Select package</label>
-                                    <select name="package2" id="package2">
-                                        <option>Choose...</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label>Extra topping</label>
-                                    <input type="checkbox" value="onion" id="onio2n" />
-                                    <label for="onion" class="inline">Onion</label>
-                                    <input type="checkbox" value="cucumber" id="cucumber2" />
-                                    <label for="cucumber" class="inline">Cucumber</label>
-                                </div>
-                                <div>
-                                    <label>Well done?</label>
-                                    <input type="radio" name="well_done" value="1" id="yes2" />
-                                    <label for="yes" class="inline">Yes</label>
-                                    <input type="radio" name="well_done" value="0" id="no2" />
-                                    <label for="no" class="inline">No</label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    <h3>Sub Pages</h3>
+                    <ul class="navigation">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#" class="active">Page 3</a></li>
+                        <li><a href="#">Page 4</a></li>
+                    </ul>
 
-                    <div id="sidebar">
-                        <h3>Simple Block</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
+                    <h3>Simple Block</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
 
-                        <h3>Refinements</h3>
-                        <form action="index.html" method="post">
-                            <div>
-                                <label for="text_field_sidebar_1">Text field</label>
-                                <input type="text" id="text_field_sidebar_1" name="text_field_sidebar_1" />
-                            </div>
+                    <h3>Simple Block</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
 
-                            <div>
-                                <label for="date_1">Select</label>
-                                <input type="text" id="date_1" name="date_1" size="2" maxlength="2" />
-                                <select name="month_1" id="month_1">
-                                    <option>Month...</option>
-                                </select>
-                                <select name="year_2" id="year_2">
-                                    <option>Year...</option>
-                                </select>
-                            </div>
+                    <h3>Simple Block</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
 
-                            <div>
-                                <label>Checkbox</label>
-                                <input type="checkbox" value="option_2" id="option_2" />
-                                <label for="option_2" class="inline">Option 1</label>
-                                <input type="checkbox" value="option_3" id="option_3" />
-                                <label for="option_3" class="inline">Option 2</label>
-                            </div>
-                        </form>
-
-                        <h3>Sub Pages</h3>
-                        <ul class="navigation">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#" class="active">Page 3</a></li>
-                            <li><a href="#">Page 4</a></li>
-                        </ul>
-
-                        <h3>Simple Block</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-
-                        <h3>Simple Block</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-
-                        <h3>Simple Block</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-
-                        <h3>Simple Block</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
+                    <h3>Simple Block</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
-                <!-- 2 columns end -->
             </div>
-            <div id="footer">
-                <ul>
-                    <li>&copy; Web Application HTML Template</li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
+            <!-- 2 columns end -->
         </div>
+        <div id="footer">
+            <ul>
+                <li>&copy; Web Application HTML Template</li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- End Document
+        ================================================== -->
     </body>
 </html>
-
