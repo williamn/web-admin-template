@@ -44,11 +44,16 @@ a, a:visited {
     padding: 2px 1em 3px 1em;
     text-decoration: none
 }
+@-moz-document url-prefix() {
+    #main_nav a {
+        padding: 2px 1em;
+    }
+}
 #main_nav a.active {
     background-color: #BDDFF7;
     color: #000
 }
-#header #sub_nav {
+#sub_nav {
     height: 20px;
     background-color: #BDDFF7;
 }
