@@ -1,24 +1,4 @@
-/*** Reset ***/
-html, body, div, span, h1, h2, p, a, form, label, table, tbody,
-tfoot, thead, tr, th, td, ul, li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
-
-}
-body {
-    line-height: 1;
-    background: #FFF;
-    color: #000;
-    font: 13px/1.5 Arial, sans-serif
-}
-a {
+a, a:visited {
     color: #2A5DB0
 }
 
@@ -38,22 +18,14 @@ a {
     overflow: hidden;
     padding: 5px 0 0 0
 }
-#header #title_and_user_links {
+#title_and_user_links {
     overflow: hidden;
     margin: 0 auto;
-    width: 960px
 }
 #title_and_user_links h1 {
-    float: left;
     margin: 0 10px;
     color: #FFF;
     font-size: 25px;
-    width: 700px;
-    display: inline
-}
-#title_and_user_links ul {
-    float: left;
-    width: 240px
 }
 #title_and_user_links a {
     color: #FFF;
@@ -64,12 +36,12 @@ a {
 }
 #main_nav, #sub_nav {
     margin: 0 auto;
-    width: 940px
+    padding: 10px 10px 0;
 }
 #main_nav a {
     background-color: #5AA7DE;
     color: #FFF;
-    padding: 2px 0.5em;
+    padding: 2px 1em 3px 1em;
     text-decoration: none
 }
 #main_nav a.active {
@@ -79,8 +51,6 @@ a {
 #header #sub_nav {
     height: 20px;
     background-color: #BDDFF7;
-    padding: 10px 10px 0;
-    width: 940px
 }
 #sub_nav a {
     padding: 3px 0.5em;
@@ -94,10 +64,8 @@ a {
 #content {
     margin: 10px auto;
     overflow: hidden;
-    width: 960px
 }
 #login_page #content {
-    width: 400px
 }
 h2 {
     font-size: 23px;
@@ -107,14 +75,8 @@ h3 {
     font-size: 16px;
     margin: 5px 0 0
 }
-#main {
-    float: left;
-    width: 700px
-}
 #sidebar {
-    float: left;
-    margin-left: 20px;
-    width: 240px
+    margin-left: 30px;
 }
 #sidebar h3 {
     background-color: #BDDFF7;
@@ -128,6 +90,9 @@ h3 {
     list-style-type:none;
     margin:0 0 20px;
     padding:0
+}
+#sidebar ul.navigation li {
+    margin-bottom: 0;
 }
 #sidebar a {
     background-color: #E7F1F7;
@@ -156,7 +121,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     margin-bottom: 10px;
-    width: 100%
+    width: 100%;
 }
 thead, tfoot {
     background-color: #DEDEDE;
@@ -231,6 +196,7 @@ form input, form textarea, form select {
     font-size: 13px
 }
 form .description {
+    margin-top: -20px;
     color: #777
 }
 form div {
@@ -240,20 +206,6 @@ form button.submit {
     font-size: 13px;
     padding: 3px 0.5em;
     margin:10px 15px 0 0
-}
-form .column {
-    display: inline;
-    float: left;
-    width: 470px
-}
-#main form .column {
-    width: 329px
-}
-#main form .column.left {
-    margin-right: 10px
-}
-#main form .column.right {
-    margin-left: 10px
 }
 #sidebar label, #sidebar input, #sidebar select {
     font-size: 100%;
